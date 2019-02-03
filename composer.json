@@ -1,0 +1,46 @@
+{
+  "name": "gsb-public/gsb_public_profile",
+  "description": "GSB Public Profile",
+  "type": "drupal-custom-profile",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "composer/installers": "^1.2"
+  },
+	"repositories": [	
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/7"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+		{
+      "type": "package",
+      "package": {
+        "name": "gsb_feature_wysiwyg", 
+        "version": "5.17",
+        "source": {
+          "url": "https://github.com/gsb-public/gsb_feature_wysiwyg", 
+          "type": "git",
+          "reference": "master" 
+        }
+      }
+		}
+	],
+  "require": {
+    "composer/installers": "^1.2",
+    "gsb_feature_wysiwyg": "5.17"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "web/drush/commands/{$name}": ["type:drupal-drush"]
+    }
+  }
+}

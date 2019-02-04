@@ -17,19 +17,19 @@
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
-		{
+    {
       "type": "package",
       "package": {
         "name": "gsb_feature_wysiwyg", 
-        "version": "5.17",
+	"type": "drupal-custom-module",      
         "source": {
           "url": "https://github.com/gsb-public/gsb_feature_wysiwyg", 
           "type": "git",
           "reference": "master" 
         }
       }
-		}
-	],
+    }
+  ],
   "require": {
     "composer/installers": "^1.2",
     "gsb_feature_wysiwyg": "5.17"
@@ -37,8 +37,8 @@
   "extra": {
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/profiles/gsb_public_profile/custom/{$name}": ["type:drupal-custom-module"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "web/drush/commands/{$name}": ["type:drupal-drush"]
     }

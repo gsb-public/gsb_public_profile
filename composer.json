@@ -8,7 +8,7 @@
   "require": {
     "composer/installers": "^1.2"
   },
-	"repositories": [	
+  "repositories": [	
     {
       "type": "composer",
       "url": "https://packages.drupal.org/7"
@@ -33,11 +33,13 @@
   ],
   "require": {
     "composer/installers": "^1.2",
-    "gsb_feature_wysiwyg": "5.17"
+    "gsb_feature_wysiwyg": "5.17",
+    "drupal/admin_menu": "3.0-rc5"
   },
   "extra": {
     "installer-paths": {
       "web/core": ["type:drupal-core"],
+      "modules/contrib/{$name}": ["type:drupal-module"],
       "modules/custom/{$name}": ["type:drupal-custom-module"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "web/drush/commands/{$name}": ["type:drupal-drush"]

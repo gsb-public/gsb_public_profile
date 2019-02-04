@@ -5,14 +5,7 @@
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {
-    "composer/installers": "^1.2"
-  },
   "repositories": [	
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/7"
-    },
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
@@ -22,7 +15,7 @@
       "package": {
         "name": "gsb_feature_wysiwyg", 
         "version": "5.17", 
-	"type": "drupal-custom-module",      
+        "type": "drupal-custom-module",      
         "source": {
           "url": "https://github.com/gsb-public/gsb_feature_wysiwyg", 
           "type": "git",
@@ -32,7 +25,6 @@
     }
   ],
   "require": {
-    "composer/installers": "^1.2",
     "gsb_feature_wysiwyg": "5.17",
     "drupal/admin_menu": "3.0-rc5"
   },

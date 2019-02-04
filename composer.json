@@ -21,6 +21,7 @@
       "type": "package",
       "package": {
         "name": "gsb_feature_wysiwyg", 
+        "version": "5.17", 
 	"type": "drupal-custom-module",      
         "source": {
           "url": "https://github.com/gsb-public/gsb_feature_wysiwyg", 
@@ -37,8 +38,7 @@
   "extra": {
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/profiles/gsb_public_profile/custom/{$name}": ["type:drupal-custom-module"],
+      "modules/custom/{$name}": ["type:drupal-custom-module"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "web/drush/commands/{$name}": ["type:drupal-drush"]
     }

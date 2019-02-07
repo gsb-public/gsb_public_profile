@@ -1,7 +1,7 @@
 {
   "name": "gsb-public/gsb_public_profile",
   "description": "GSB Public Profile",
-  "type": "drupal-custom-profile",
+  "type": "drupal-profile",
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -29,11 +29,8 @@
   },
   "extra": {
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "modules/contrib/{$name}": ["type:drupal-module"],
-      "modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "web/drush/commands/{$name}": ["type:drupal-drush"]
+      "profiles/{$name}": ["type:drupal-profile"],
+      "profiles/modules/custom/{$name}": ["type:drupal-custom-module"]
     }
   }
 }
